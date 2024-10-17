@@ -38,9 +38,8 @@ if (isUserMailValid) {
     // } else {
     //   console.log("Email non trovata");
     // }
-
-    console.log(isMailFound ? "Email trovata" : "Email non trovata");
   }
+  console.log(isMailFound ? "Email trovata" : "Email non trovata");
 } else {
   console.log("Email non valida");
 }
