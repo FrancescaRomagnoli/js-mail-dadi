@@ -33,11 +33,13 @@ if (isUserMailValid) {
       isMailFound = true;
     }
 
-    if (isMailFound) {
-      console.log("Email trovata");
-    } else {
-      console.log("Email non trovata");
-    }
+    // if (isMailFound) {
+    //   console.log("Email trovata");
+    // } else {
+    //   console.log("Email non trovata");
+    // }
+
+    console.log(isMailFound ? "Email trovata" : "Email non trovata");
   }
 } else {
   console.log("Email non valida");
