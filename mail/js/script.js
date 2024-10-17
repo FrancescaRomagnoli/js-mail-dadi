@@ -23,3 +23,6 @@ console.log(emails);
 
 const userMail = prompt("Inserisci il tuo indirizzo email");
 console.log(userMail);
+
+const isUserMailValid = userMail.includes("@") && userMail.includes(".");
+console.log(isUserMailValid);
