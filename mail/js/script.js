@@ -17,7 +17,7 @@ const emails = [
   "testuser2024@email.com",
 ];
 
-console.log(emails);
+// console.log(emails);
 
 // # user data
 
@@ -26,3 +26,13 @@ console.log(userMail);
 
 const isUserMailValid = userMail.includes("@") && userMail.includes(".");
 console.log(isUserMailValid);
+
+if (isUserMailValid) {
+  for (let i = 0; i < emails.length; i++) {
+    const currentEmail = emails[i];
+
+    if (currentEmail == userMail) {
+      console.log("email trovata");
+    }
+  }
+}
