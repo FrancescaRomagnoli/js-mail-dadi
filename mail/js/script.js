@@ -17,22 +17,28 @@ const emails = [
   "testuser2024@email.com",
 ];
 
-// console.log(emails);
-
 // # user data
 
 const userMail = prompt("Inserisci il tuo indirizzo email");
-console.log(userMail);
 
 const isUserMailValid = userMail.includes("@") && userMail.includes(".");
-console.log(isUserMailValid);
 
 if (isUserMailValid) {
-  for (let i = 0; i < emails.length; i++) {
-    const currentEmail = emails[i];
+  let isMailFound = false;
 
-    if (currentEmail == userMail) {
-      console.log("email trovata");
+  for (let i = 0; i < emails.length; i++) {
+    const currentMail = emails[i];
+
+    if (currentMail === userMail) {
+      isMailFound = true;
+    }
+
+    if (isMailFound) {
+      console.log("Email trovata");
+    } else {
+      console.log("Email non trovata");
     }
   }
+} else {
+  console.log("Email non valida");
 }
